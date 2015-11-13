@@ -24,8 +24,13 @@ Debug:RCC_DIR = debug/.rcc
 Debug:UI_DIR = debug/.ui
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    squarelabel.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    squarelabel.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    resources/resources.qrc

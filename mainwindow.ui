@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1227</width>
-    <height>780</height>
+    <height>827</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,13 +15,140 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="1">
+    <item row="1" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
-      <widget class="QWidget" name="page"/>
-      <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="EditGameWidget">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="SquareLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>650</width>
+              <height>650</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1200</width>
+              <height>1200</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>650</width>
+              <height>650</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources/resources.qrc">:/new/TestImages/TestImages/BlobBlack.bmp</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>Tab 1</string>
+             </attribute>
+            </widget>
+            <widget class="QWidget" name="tab_4">
+             <attribute name="title">
+              <string>Tab 2</string>
+             </attribute>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QSlider" name="horizontalSlider">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <pointsize>28</pointsize>
+              </font>
+             </property>
+             <property name="autoFillBackground">
+              <bool>true</bool>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="text">
+              <string>31 : 52</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>Play/Pause</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="reserved"/>
+      <widget class="QWidget" name="mainScreen">
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="8" column="1">
          <spacer name="verticalSpacer_2">
@@ -40,7 +167,7 @@
          </spacer>
         </item>
         <item row="2" column="1">
-         <widget class="QLabel" name="label">
+         <widget class="QLabel" name="titleLabel">
           <property name="font">
            <font>
             <pointsize>23</pointsize>
@@ -58,7 +185,7 @@
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="reviewGameButton">
           <property name="font">
            <font>
             <pointsize>12</pointsize>
@@ -70,7 +197,7 @@
          </widget>
         </item>
         <item row="7" column="1">
-         <widget class="QPushButton" name="pushButton_4">
+         <widget class="QPushButton" name="editRosterButton">
           <property name="font">
            <font>
             <pointsize>12</pointsize>
@@ -82,7 +209,7 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="addGameButton">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -132,7 +259,7 @@
          </spacer>
         </item>
         <item row="5" column="1">
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="editGameButton">
           <property name="font">
            <font>
             <pointsize>12</pointsize>
@@ -144,7 +271,7 @@
          </widget>
         </item>
         <item row="4" column="2" rowspan="4">
-         <spacer name="horizontalSpacer_2">
+         <spacer name="rightSpacer">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -157,7 +284,7 @@
          </spacer>
         </item>
         <item row="4" column="0" rowspan="4">
-         <spacer name="horizontalSpacer">
+         <spacer name="leftSpacer">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -196,6 +323,15 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <customwidgets>
+  <customwidget>
+   <class>SquareLabel</class>
+   <extends>QLabel</extends>
+   <header>squarelabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources/resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
