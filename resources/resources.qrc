@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/new/TestImages">
         <file>TestImages/BlobBlack.bmp</file>
+        <file>TestImages/LeagueMap.jpg</file>
     </qresource>
 </RCC>
