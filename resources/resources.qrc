@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/TestImages">
+        <file>TestImages/BlobBlack.bmp</file>
+    </qresource>
+</RCC>
