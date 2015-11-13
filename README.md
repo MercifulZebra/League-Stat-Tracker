@@ -1,25 +1,40 @@
 README
 
 League Stat Tracker.
-Author : Zachery Condon
+
+Primary : Zachery Condon
+
+Contributors : Trevor Shires
 
 #Notes before Commiting
 Make sure to set up .gitignore file before commiting.
-Baseline .gitignore -- 
-# Compiled Source #
-####################
+
+Baseline .gitignore ::
+
+Compiled Source 
+---------------------------
 *.com
+
 *.class
+
 *.dll
+
 *.exe
+
 *.o
+
 *.so
 
-#Make Files
+Make Files
+---------------------------
 Makefile
+
 Makefile.Debug
+
 Makefile.Release
 
-#Build Directories
+Build Directories
+---------------------------
 release
+
 debug
