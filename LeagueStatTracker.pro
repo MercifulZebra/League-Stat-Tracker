@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,10 +25,15 @@ Debug:UI_DIR = debug/.ui
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    squarelabel.cpp
+    squarelabel.cpp \
+    loadgamewidget.cpp \
+    mainmenuwidget.cpp
 
 HEADERS  += mainwindow.h \
-    squarelabel.h
+    squarelabel.h \
+    internaltypes.h \
+    loadgamewidget.h \
+    mainmenuwidget.h
 
 FORMS    += mainwindow.ui
 
